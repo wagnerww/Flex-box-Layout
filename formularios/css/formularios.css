@@ -1,0 +1,150 @@
+:root{
+  /* Centraliza e já deixa o espaçamento calculado */
+  --form-espacamento-laterais:5px;
+  --form-mg-espacamento-laterais:calc(var(--form-espacamento-laterais) * -1);
+  --form-pd-espacamento-laterais:var(--form-espacamento-laterais);
+}
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+html * a{
+  text-decoration: none;
+}
+
+body{
+  background: #f3f3f3;
+}
+
+input{
+  display: inline-block;
+  width:100%;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border:1px solid #3c3c3c;
+}
+
+button{
+  display: inline-block;
+  border:0;
+  padding: 10px 20px;
+  cursor:pointer;
+  color:white;
+  font-weight: bold;
+  background:green;
+  border-radius: 4px;
+}
+
+.container{
+  max-width: 960px;
+  margin:0px auto;
+  min-height: 100vh;
+  padding: 5px;
+}
+
+/* ---- FORMULÁRIO ---- */
+.container-form{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-form form{
+  flex:1 1 260px;
+  margin-bottom: 20px;
+}
+
+/* FORMULÁRIO LABEL E CAMPO ABAIXO */
+/* LINHAS DO FORM */
+.form-group{
+  margin-bottom:5px;
+}
+
+.form-row{
+  /*
+    -5px pq nos col tem tem 5 de padding, assim não quebra o layout
+  */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: var(--form-mg-espacamento-laterais);
+  margin-right: var(--form-mg-espacamento-laterais);
+}
+
+/* COLUNAS DO FORM */
+.form-col-4{
+  flex:1 1 33.33%;
+  padding-right: var(--form-pd-espacamento-laterais);
+  padding-left: var(--form-pd-espacamento-laterais);
+}
+
+.form-col-6{
+  flex:1 1 50%;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* FIM COLUNAS DO FORM */
+/* FIM DO FORMULÁRIO LABEL E CAMPO ABAIXO */
+
+/* FORM INLINE */
+.form-group-inline{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+  margin-left: var(--form-mg-espacamento-laterais);
+  margin-right: var(--form-mg-espacamento-laterais);
+}
+
+.form-group-inline span{
+  display: block;
+  margin-right: 5px;
+}
+
+/* COLUNAS INLINE */
+.form-col-inline{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: var(--form-pd-espacamento-laterais);
+  padding-left: var(--form-pd-espacamento-laterais);
+  margin-bottom: 10px;
+}
+
+.form-col-4-inline{
+  display: flex;
+  align-items: center;
+  width: 33.33%;  
+  padding-right: var(--form-pd-espacamento-laterais);
+  padding-left: var(--form-pd-espacamento-laterais);
+  margin-bottom: 10px;
+}
+
+.form-col-6-inline{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding-right: var(--form-pd-espacamento-laterais);
+  padding-left: var(--form-pd-espacamento-laterais);
+  margin-bottom: 10px;
+}
+
+/* FIM COLUNAS INLINE */
+
+/* FIM FORM INLINE */
+
+
+/* ---- FIM FORMULÁRIO ---- */
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.col-md6{
+
+}
