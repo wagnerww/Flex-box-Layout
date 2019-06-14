@@ -1,0 +1,262 @@
+:root{
+  --bkg-color:#FFFFFF;
+  --font-color-Primary:#8e8e8e;
+  --font-color-Secundary:#211922;
+  --font-color-Tertiary:#333;
+  --elements-color: #EFEFEF;
+  --icon-color:#e60023;
+  --menu-padding-tb:10px;
+}
+
+* {
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html{
+  font-size: 16px;
+}
+
+html * a{
+  text-decoration: none;
+}
+
+body{
+  background: var(--bkg-color);
+  color:var(--font-color-Primary);
+  font-family: 'Roboto', sans-serif;
+}
+
+i {
+  font-size: 1.75em; 
+}
+
+.container-menu{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  
+}
+
+.menu-fixed{
+  position: fixed;
+  top:0px;
+  width: 100%;
+  background: #FFFFFF;
+  z-index: 3;
+}
+
+.container-menu li{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-menu .container-search{
+  flex:2 1 260px;
+}
+
+.nav-link:hover{
+  background: var(--elements-color);
+}
+
+.nav-link{
+  font-weight: bold;
+  padding: 10px 15px;
+  color:var(--font-color-Primary);
+  border-radius: 50px;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.container-menu li a i{
+  font-size: 1.45em;
+}
+
+.iconLink{
+  padding: 10px !important;
+}
+
+.logo{
+  color:var(--icon-color);
+  font-size: 1.8em !important;
+}
+
+.profile img{
+  width: 24px;
+  height: 24px; 
+  object-fit: contain;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.container-menu li .profile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active{
+  color:var(--font-color-Tertiary) !important;
+}
+
+.search{
+  display: flex;
+  flex:1;
+  align-items: center;
+  padding: 11px 15px;
+  background: var(--elements-color) !important;
+  border-radius: 10px;
+  font-size: .9em;
+  margin-right: 5px;
+}
+
+.search i{
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.search input{
+  background: transparent;
+  border:none;
+  font-size: 1em;
+  width: 100%;
+  color:var(--font-color-Secundary);
+  font-weight: bold;
+  align-self: flex-end;
+}
+/* FINAL HEADER */
+
+/* INICIO GRID */
+section{
+  max-width: 1320px;
+  margin:0 auto;
+  padding: 30px 20px;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.container-image{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 15px 10px;
+  border-radius: 8px;
+  cursor:zoom-in;
+  position: relative;
+}
+
+.container-image span{
+  margin-top: 10px;
+  font-weight: bold;
+  color:var(--font-color-Secundary);
+  font-size: .9em;
+}
+
+.container-image img{
+  z-index: 0px;
+  border-radius: 8px;
+}
+
+.container-image:hover{
+  background: var(--elements-color);
+}
+
+.container-image:hover img {
+  filter: brightness(0.80);
+}
+
+.actions-image{
+  display: none;
+}
+
+.container-image:hover .actions-image{
+  padding-top: 10px;
+  padding-right: 30px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1;
+}
+
+.actions-image button{
+  padding: 11px 15px;
+  background: var(--icon-color);
+  color:var(--bkg-color);
+  font-weight: bold;
+  font-size: .95em;
+  border:0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.actions-image button:hover{
+  filter: brightness(0.90);
+}
+/* FIM GRID */
+
+/*  BALOON */
+.baloon{
+  display: none;
+  justify-content: flex-start;
+  position: absolute;
+  background: #ffffff;
+  color:black;  
+  min-width: 150px;
+  max-width: 250px;
+  right: 0px;
+  margin-top: 2px;
+  margin-right:5px;
+  border-radius: 6px;
+  border:1px solid  var(--elements-color);
+  z-index: 2;
+  box-shadow: -3px 5px 5px #211922;
+}
+
+.baloon ul{
+  width: 100%;
+  max-height: 450px;
+  overflow: auto;
+}
+
+.baloon li{
+  display: block;
+  padding: 0px 10px;
+  border-bottom: 1px solid  var(--elements-color);
+}
+
+.baloon li:hover{
+  background:var(--elements-color);
+}
+
+.baloon div{
+  cursor: pointer;
+}
+
+.baloon  img{
+  width: 100px;
+  height: 100px; 
+  object-fit: contain;
+  border-radius: 50%;
+  margin-right: 5px;
+  border-radius: 8px;
+}
+
+
+#lastFavorites:hover > .baloon{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/*FIM BALOON */
